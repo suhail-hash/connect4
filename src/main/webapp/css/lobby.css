@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background: url('../images/lobby.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.card {
+    background: rgba(40, 40, 40, 0.75) !important; /* lighter + less opaque */
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: white;
+}
+
+
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-warning {
+    font-weight: 600;
+}
+
+.btn-primary {
+    font-weight: 600;
+}
+
+.btn-outline-light {
+    border-width: 2px;
+}
+.divider-light {
+    border-color: rgba(255, 255, 255, 0.25) !important;
+}
+/* Host Game - Golden */
+.btn-host {
+    background: #f7b500;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-host:hover {
+    background: #ffd84d;
+}
+
+/* Join Game - Dark Green */
+.btn-join {
+    background: #14532d;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-join:hover {
+    background: #1f7a3a;
+}
+
+/* Logout */
+.btn-logout {
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.4);
+    color: white;
+}
+
+.btn-logout:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* Admin */
+.btn-admin {
+    background: #8b0000;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+.btn-admin:hover {
+    background: #b30000;
+}

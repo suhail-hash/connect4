@@ -1,0 +1,32 @@
+html, body { height: 100%; margin: 0; }
+
+body {
+    min-height: 100vh;
+    color: #fff;
+    background: radial-gradient(circle at 50% 20%, #0f3d2b 0%, #0b2e1f 40%, #061710 80%);
+    font-family: Arial, sans-serif;
+    padding: 24px 12px;
+}
+
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.glass {
+    border-radius: 18px;
+    padding: 18px;
+    background: rgba(10, 20, 30, 0.40);
+    border: 1px solid rgba(80, 160, 255, 0.45);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+.table-dark {
+    --bs-table-bg: rgba(0, 0, 0, 0.25);
+    --bs-table-striped-bg: rgba(255, 255, 255, 0.03);
+    --bs-table-hover-bg: rgba(80, 160, 255, 0.08);
+    border-color: rgba(255,255,255,0.10);
+}
+
+.text-muted { color: rgba(220, 240, 255, 0.65) !important; }

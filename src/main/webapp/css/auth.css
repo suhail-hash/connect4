@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background: url('../images/connect4-auth-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+}
+
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: white;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+}
+
+.btn-success {
+    background-color: #00c853;
+    border: none;
+}
